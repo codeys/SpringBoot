@@ -24,6 +24,15 @@ spring:
     useGlobalDataSourceStat: true  
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
     initialization-mode: always
-    schema:
-      - classpath:sql/department.sql
-      - classpath:sql/employee.sql
+#    schema:
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
+      
+      
+  redis:
+    host: 192.168.231.128
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
